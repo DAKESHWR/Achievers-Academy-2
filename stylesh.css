@@ -443,6 +443,7 @@ h4 {
 }
 
 .carousel__img {
+ border-radius: 23px;
   max-height: 160px;
   object-fit: cover;
   margin-bottom: auto;
