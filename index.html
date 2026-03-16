@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduSpark | India's Best Coaching Institute</title>
+  <meta name="description" content="EduSpark offers unparalleled coaching for NEET, JEE & Boards.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="stylesh.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="nav__brand">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="brand-icon" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+        </svg>
+        EduSpark
+      </a>
+
+      <nav class="nav__menu">
+        <ul class="nav__links">
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#courses" class="nav__link">Courses</a></li>
+          <li><a href="#results" class="nav__link">Results</a></li>
+          <li><a href="#scholarships" class="nav__link">Scholarships</a></li>
+          <li><a href="#hub" class="nav__link">Student Hub</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__actions-mobile hide-on-desktop">
+          <a href="tel:+919876543210" class="btn btn--primary">Call Now</a>
+          <button class="btn btn--outline btn-login">Login</button>
+        </div>
+      </nav>
+
+      <div class="nav__actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">
+          <svg id="theme-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="theme-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <a href="tel:+919876543210" class="btn btn--primary hide-on-mobile">Call Now</a>
+        <button class="btn btn--outline btn-login hide-on-mobile">Login</button>
+        <button class="hamburger hide-on-desktop" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero__grid">
+      <div class="hero__content animate-on-scroll">
+        <span class="badge">Session 2026-27</span>
+        <h1 class="hero__title">India’s Best Coaching for <span class="text-accent-pink">NEET</span>, <span
+            class="text-accent-teal">JEE</span> & <span class="text-accent-yellow">Boards</span></h1>
+        <p class="hero__subtitle">Unlock your potential with our unmatched pedagogy, dedicated mentorship, and proven
+          results. Start your journey to success today!</p>
+        <div class="hero__buttons">
+          <a href="#courses" class="btn btn--primary btn--lg">Explore Courses</a>
+          <a href="#" class="btn btn--secondary btn--lg">Download Brochure</a>
+        </div>
+      </div>
+      <div class="hero__slider animate-on-scroll" style="transition-delay: 0.2s">
+        <div class="carousel">
+          <div class="carousel__inner">
+            <div class="carousel__slide active">
+              <div class="carousel__card"
+                style="background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));">
+                <img src="images/neet.png" alt="NEET" class="carousel__img">
+                <div class="carousel__tag">Rank Accelerator</div>
+                <h3 class="carousel__title">NEET Crash Course</h3>
+                <p class="carousel__desc">Intensive testing and revision to boost your score.</p>
+              </div>
+            </div>
+            <div class="carousel__slide">
+              <div class="carousel__card" style="background: linear-gradient(135deg, var(--color-accent2), #0d9488);">
+                <img src="images/jee.png" alt="JEE Advanced" class="carousel__img">
+                <div class="carousel__tag">Target 2026</div>
+                <h3 class="carousel__title">JEE Advanced Program</h3>
+                <p class="carousel__desc">Master complex problem-solving with top-tier IITian faculty.</p>
+              </div>
+            </div>
+            <div class="carousel__slide">
+              <div class="carousel__card" style="background: linear-gradient(135deg, var(--color-accent), #db2777);">
+                <img src="images/foundation.png" alt="Foundation" class="carousel__img">
+                <div class="carousel__tag">Early Start</div>
+                <h3 class="carousel__title">Foundation (6th–10th)</h3>
+                <p class="carousel__desc">Build a strong base for future competitive exams and Olympiads.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel__btn carousel__btn--prev" aria-label="Previous slide">&#10094;</button>
+          <button class="carousel__btn carousel__btn--next" aria-label="Next slide">&#10095;</button>
+          <div class="carousel__dots"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Goals Section -->
+  <section class="section bg-soft goals" id="goals">
+    <div class="container text-center animate-on-scroll">
+      <h2 class="section__title">Select your goal to explore our courses</h2>
+      <p class="section__subtitle">We offer tailored programs to ensure you reach your highest potential.</p>
+
+      <div class="goals__grid">
+        <a href="#courses" class="goal-card">
+          <div class="goal-card__icon bg-accent-pink">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+          </div>
+          <h3 class="goal-card__title">NEET</h3>
+          <p class="goal-card__desc">Medical Entrance</p>
+          <span class="btn btn--text">Explore &rarr;</span>
+        </a>
+        <a href="#courses" class="goal-card">
+          <div class="goal-card__icon bg-accent-teal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="goal-card__title">JEE Main & Adv</h3>
+          <p class="goal-card__desc">Engineering Entrance</p>
+          <span class="btn btn--text">Explore &rarr;</span>
+        </a>
+        <a href="#courses" class="goal-card">
+          <div class="goal-card__icon bg-accent-yellow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+          </div>
+          <h3 class="goal-card__title">Class 6–10</h3>
+          <p class="goal-card__desc">School Preparation</p>
+          <span class="btn btn--text">Explore &rarr;</span>
+        </a>
+        <a href="#courses" class="goal-card">
+          <div class="goal-card__icon bg-primary">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <h3 class="goal-card__title">Olympiads</h3>
+          <p class="goal-card__desc">Foundational Excellence</p>
+          <span class="btn btn--text">Explore &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="section" id="courses">
+    <div class="container animate-on-scroll">
+      <h2 class="section__title text-center">Our Courses</h2>
+      <div class="courses__grid">
+        <div class="course-card">
+          <div class="course-card__header">
+            <span class="badge bg-primary">For Class 11</span>
+          </div>
+          <h3 class="course-card__title">Two Year Integrated Classroom Course for NEET</h3>
+          <ul class="course-card__details">
+            <li><strong>Duration:</strong> March 2026 – May 2028</li>
+            <li><strong>Timings:</strong> Mon–Fri (3 hrs/day)</li>
+          </ul>
+          <p class="course-card__desc">A comprehensive curriculum designed from scratch covering school syllabus and
+            hardcore NEET patterns.</p>
+          <div class="course-card__fee">₹ 1,25,000 <span>/ year</span></div>
+          <div class="course-card__actions">
+            <button class="btn btn--primary">Enrol Now</button>
+            <button class="btn btn--outline">Download Brochure</button>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-card__header">
+            <span class="badge bg-accent-teal">For Class 12</span>
+          </div>
+          <h3 class="course-card__title">One Year Classroom Course for JEE Main & Advanced</h3>
+          <ul class="course-card__details">
+            <li><strong>Duration:</strong> March 2026 – May 2027</li>
+            <li><strong>Timings:</strong> Mon, Wed, Fri (4 hrs/day)</li>
+          </ul>
+          <p class="course-card__desc">Focused test series, advanced problem solving, and rigorous revision modules to
+            ensure top ranks.</p>
+          <div class="course-card__fee">₹ 1,35,000 <span>/ year</span></div>
+          <div class="course-card__actions">
+            <button class="btn btn--primary">Enrol Now</button>
+            <button class="btn btn--outline">Download Brochure</button>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-card__header">
+            <span class="badge bg-accent-pink">For Class 12 Dropper</span>
+          </div>
+          <h3 class="course-card__title">Repeater Course for NEET Excellence</h3>
+          <ul class="course-card__details">
+            <li><strong>Duration:</strong> June 2026 – May 2027</li>
+            <li><strong>Timings:</strong> Daily (6 hrs/day)</li>
+          </ul>
+          <p class="course-card__desc">Intensive highly-specialized modules aimed exclusively at cracking the exam with
+            zero distraction.</p>
+          <div class="course-card__fee">₹ 95,000 <span>/ year</span></div>
+          <div class="course-card__actions">
+            <button class="btn btn--primary">Enrol Now</button>
+            <button class="btn btn--outline">Download Brochure</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scholarships Section -->
+  <section class="section bg-gradient" id="scholarships">
+    <div class="container animate-on-scroll">
+      <h2 class="section__title text-center text-white">Scholarship Exams</h2>
+      <p class="section__subtitle text-center text-white" style="opacity: 0.9;">Unlock your potential and ease your
+        financial burden with our merit-based tests.</p>
+
+      <div class="scholarship__grid">
+        <div class="card bg-surface text-center">
+          <h3 class="card__title text-primary">National Talent Scholarship Test</h3>
+          <p class="card__desc">Get up to 100% scholarship on tuition fees based on exam performance.</p>
+          <button class="btn btn--primary">Apply Now</button>
+        </div>
+        <div class="card bg-surface text-center">
+          <h3 class="card__title text-accent-pink">Early Bird Scholarship</h3>
+          <p class="card__desc">Avail 20% flat discount on our foundation batches by early admission.</p>
+          <button class="btn btn--outline">Apply Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Journey Section -->
+  <section class="section journey">
+    <div class="container animate-on-scroll">
+      <h2 class="section__title text-center">Student Journey to Success</h2>
+      <div class="journey__timeline">
+        <div class="journey__step animate-stagger" style="--delay: 1">
+          <div class="journey__icon bg-primary">1</div>
+          <h4 class="journey__title">Orientation</h4>
+          <p class="journey__desc">Setting the roadmap.</p>
+        </div>
+        <div class="journey__step animate-stagger" style="--delay: 2">
+          <div class="journey__icon bg-accent-teal">2</div>
+          <h4 class="journey__title">Study Material</h4>
+          <p class="journey__desc">Comprehensive modules.</p>
+        </div>
+        <div class="journey__step animate-stagger" style="--delay: 3">
+          <div class="journey__icon bg-accent-yellow">3</div>
+          <h4 class="journey__title">Live Classes</h4>
+          <p class="journey__desc">Interactive learning.</p>
+        </div>
+        <div class="journey__step animate-stagger" style="--delay: 4">
+          <div class="journey__icon bg-accent-pink">4</div>
+          <h4 class="journey__title">Regular Tests</h4>
+          <p class="journey__desc">AI-driven assessments.</p>
+        </div>
+        <div class="journey__step animate-stagger" style="--delay: 5">
+          <div class="journey__icon bg-primary-dark">5</div>
+          <h4 class="journey__title">Exam Success</h4>
+          <p class="journey__desc">Achieve your dreams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights / Stats Section -->
+  <section class="section stats bg-primary">
+    <div class="container stats__grid">
+      <div class="stat-item animate-on-scroll">
+        <div class="stat-number"><span class="counter" data-target="15">0</span>+</div>
+        <div class="stat-label">Years of Excellence</div>
+      </div>
+      <div class="stat-item animate-on-scroll" style="transition-delay: 0.1s">
+        <div class="stat-number"><span class="counter" data-target="100">0</span>+</div>
+        <div class="stat-label">Centers Nationwide</div>
+      </div>
+      <div class="stat-item animate-on-scroll" style="transition-delay: 0.2s">
+        <div class="stat-number"><span class="counter" data-target="100000">0</span>+</div>
+        <div class="stat-label">Students Trained</div>
+      </div>
+      <div class="stat-item animate-on-scroll" style="transition-delay: 0.3s">
+        <div class="stat-number"><span class="counter" data-target="500">0</span>+</div>
+        <div class="stat-label">Expert Faculty</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section bg-soft" id="results">
+    <div class="container animate-on-scroll">
+      <h2 class="section__title text-center">What Our Students Say</h2>
+
+      <div class="testimonials__grid">
+        <div class="card testimonial-card">
+          <div class="testimonial-card__header">
+            <div class="avatar bg-accent-teal">A</div>
+            <div>
+              <h4 class="testimonial-card__name">Aryan Kumar</h4>
+              <p class="testimonial-card__subtitle">AIR 12 - NEET 2025</p>
+            </div>
+          </div>
+          <p class="testimonial-card__text">"The structured study material and constant motivation from faculties made
+            my NEET journey incredibly smooth."</p>
+        </div>
+
+        <div class="card testimonial-card">
+          <div class="testimonial-card__header">
+            <div class="avatar bg-accent-pink">S</div>
+            <div>
+              <h4 class="testimonial-card__name">Sneha Reddy</h4>
+              <p class="testimonial-card__subtitle">AIR 45 - JEE Adv 2025</p>
+            </div>
+          </div>
+          <p class="testimonial-card__text">"Excellent problem-solving approach. The weekly test series simulated the
+            real exam difficulty perfectly."</p>
+        </div>
+
+        <div class="card testimonial-card">
+          <div class="testimonial-card__header">
+            <div class="avatar bg-primary">R</div>
+            <div>
+              <h4 class="testimonial-card__name">Rahul Mehta</h4>
+              <p class="testimonial-card__subtitle">99.9% - Boards</p>
+            </div>
+          </div>
+          <p class="testimonial-card__text">"Foundation courses helped me balance my school exams with Olympiad
+            preparations effortlessly."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Hub (Resources) -->
+  <section class="section" id="hub">
+    <div class="container animate-on-scroll">
+      <h2 class="section__title text-center">Do More with EduSpark</h2>
+      <div class="resources__grid">
+        <a href="#" class="resource-card border-top-pink">
+          <div class="resource-card__icon text-accent-pink">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="resource-card__title">Latest News & Events</h3>
+          <p class="resource-card__desc">Stay updated with exam notifications.</p>
+        </a>
+        <a href="#" class="resource-card border-top-teal">
+          <div class="resource-card__icon text-accent-teal">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <h3 class="resource-card__title">Answer Keys</h3>
+          <p class="resource-card__desc">Detailed solutions from experts.</p>
+        </a>
+        <a href="#" class="resource-card border-top-yellow">
+          <div class="resource-card__icon text-accent-yellow">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+          </div>
+          <h3 class="resource-card__title">Free Mock Tests</h3>
+          <p class="resource-card__desc">Practice with real exam interfaces.</p>
+        </a>
+        <a href="#" class="resource-card border-top-primary">
+          <div class="resource-card__icon text-primary">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+          </div>
+          <h3 class="resource-card__title">Prep Blog</h3>
+          <p class="resource-card__desc">Tips, tricks, and topper strategies.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-soft" id="faq">
+    <div class="container animate-on-scroll">
+      <h2 class="section__title text-center">Frequently Asked Questions</h2>
+      <div class="faq__container">
+        <div class="faq__item">
+          <button class="faq__question">
+            What are the batch timings?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Our batches generally run from 3 PM to 8 PM on weekdays for school-going students, and morning batches
+              are available for dropper students.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question">
+            Does EduSpark provide hostel facilities?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Yes, we have tie-ups with verified hostels near all our major centers. They provide safe, hygienic, and
+              conducive environments for study.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question">
+            How can I apply for the scholarship test?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>You can apply online via our Scholarship section or visit the nearest branch to register. The exam is
+              conducted online as well as offline.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question">
+            Are the study materials updated with the latest exam patterns?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Absolutely. Our R&D team continuously monitors exam trends and updates the study modules and test series
+              accordingly every year.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA Strip -->
+  <section class="cta-strip bg-accent-pink text-white" id="contact">
+    <div class="container cta-strip__inner">
+      <div>
+        <h2 class="cta-strip__title">Need Guidance? Talk to an Expert</h2>
+        <p class="cta-strip__desc">We are available 24/7 to solve your queries.</p>
+      </div>
+      <div class="cta-strip__actions">
+        <a href="https://wa.me/919876543210" class="btn btn--outline"
+          style="border-color: white; color: white;">WhatsApp Us</a>
+        <a href="tel:+919876543210" class="btn btn--primary" style="background: white; color: var(--color-accent);">Call
+          Us Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-surface border-top-light">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <a href="#" class="nav__brand text-primary" style="margin-bottom: 1rem; display: inline-flex;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            class="brand-icon" style="margin-right:0.5rem;">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          EduSpark
+        </a>
+        <p class="text-muted" style="margin-bottom: 1.5rem;">Empowering young minds to achieve their absolute potential
+          through guided mentorship and comprehensive pedagogy.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg></a>
+          <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg></a>
+          <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z">
+              </path>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+            </svg></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__title">Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#scholarships">Scholarships</a></li>
+          <li><a href="#hub">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__title">Exams</h4>
+        <ul class="footer__links">
+          <li><a href="#">NEET</a></li>
+          <li><a href="#">JEE Main</a></li>
+          <li><a href="#">JEE Advanced</a></li>
+          <li><a href="#">Board Exams</a></li>
+          <li><a href="#">Olympiads</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__title">Contact Info</h4>
+        <ul class="footer__links">
+          <li style="display: flex; gap: 10px;">
+            <strong>Address:</strong> 123 Education Hub, Knowledge City, India 110001
+          </li>
+          <li style="display: flex; gap: 10px;">
+            <strong>Email:</strong> <a href="mailto:info@eduspark.in">info@eduspark.in</a>
+          </li>
+          <li style="display: flex; gap: 10px;">
+            <strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom border-top-light text-center">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2026 EduSpark Coaching Institute. All Rights Reserved.</p>
+        <div class="footer__legals">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Login Modal -->
+  <div class="modal" id="login-modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content card">
+      <button class="modal__close" aria-label="Close modal">&times;</button>
+      <h2 class="modal__title text-center">Login to Your Account</h2>
+      <form id="login-form" class="form" novalidate>
+        <div class="form__group">
+          <label for="email" class="form__label">Email Address</label>
+          <input type="email" id="email" class="form__input" placeholder="Enter your email" required>
+        </div>
+        <div class="form__group">
+          <label for="password" class="form__label">Password</label>
+          <input type="password" id="password" class="form__input" placeholder="Enter your password" required>
+        </div>
+        <div class="form__group form__group--row">
+          <label class="checkbox-label">
+            <input type="checkbox" id="remember">
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="form__link">Forgot password?</a>
+        </div>
+        <div id="login-error" class="form__error">Please fill out all required fields.</div>
+        <div style="margin-top: 1.5rem">
+          <button type="submit" class="btn btn--primary" style="width: 100%;">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
