@@ -444,7 +444,7 @@ h4 {
 
 .carousel__img {
   max-height: 160px;
-  object-fit: contain;
+  object-fit: cover;
   margin-bottom: auto;
   align-self: center;
 }
